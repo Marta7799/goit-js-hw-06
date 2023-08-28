@@ -14,3 +14,19 @@ const images = [
 ];
 
 const gallery = document.querySelector(".gallery");
+
+const photos = images
+  .map(
+    (image) =>
+      `<li><img class="picture" src=${image.url} width = '300' alt=${image.alt}></img></li>`
+  )
+  .join("");
+
+gallery.insertAdjacentHTML("beforeend", photos);
+
+const pictures = document.querySelectorAll(".picture");
+
+gallery.style.display = "flex";
+gallery.style.flexDirection = "column-reverse";
+gallery.style.gap = "30px";
+gallery.style.listStyle = "none";
