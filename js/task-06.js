@@ -24,6 +24,9 @@ const validation = () => {
   if (textInput.value.length < length) {
     textInput.classList.add("invalid");
     textInput.classList.remove("valid");
+  } else if (textInput.value.length > length) {
+    textInput.classList.add("invalid");
+    textInput.classList.remove("valid");
   } else {
     textInput.classList.add("valid");
     textInput.classList.remove("invalid");
