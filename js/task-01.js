@@ -6,5 +6,6 @@ listCategories.forEach((category) => {
   const categoryName = title.textContent;
   const elementsNumber = category.querySelectorAll("li").length;
 
-  console.log(`Category: ${categoryName} Elements: ${elementsNumber}`);
+  //console.log(`Category: ${categoryName} Elements: ${elementsNumber}`);
+  console.log(`Category: ${categoryName}`, elementsNumber);
 });
